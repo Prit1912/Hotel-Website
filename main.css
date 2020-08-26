@@ -1,0 +1,466 @@
+@font-face{
+    font-family: myfirstfont;
+    src: url(fonts/Aileron-Regular.otf);
+}
+@font-face{
+    font-family: mysecondfont;
+    src: url(fonts/GreatVibes-Regular.otf);
+}
+* {
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+header {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    flex-basis: 25%;
+    margin: 1rem;
+}
+.title a{
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.nav-links {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    list-style: none;
+}
+.nav-links li a {
+    text-decoration: none;
+    margin: 0 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+}
+.container{
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+}
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.centeredText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.centeredText h1 {
+    font-family: mysecondfont;
+    color: white;
+    font-size: 3rem;
+}
+.centeredText h3 {
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+.bgbtndiv {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.bgButton {
+    border: 0em;
+    background-color: #5dc8cd;
+    width: 8rem;
+    margin-top: 30px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    color: #ffff;
+    border-radius: 5px;
+    transition: all -5s ease-in;
+}
+.bgButton:hover {
+    background-color: #019394;
+}
+.about {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    min-height: 20rem;
+    width: 80%;
+    margin: 3rem auto;
+    column-gap: 1rem;
+}
+.aboutdesc {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+}
+.aboutdesc p {
+    width: 60%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: justify;
+}
+.aboutdesc h1 {
+    align-self: center;
+    margin: 1rem;
+    font-family: myfirstfont;
+}
+.AboutImgOne {
+    width: 100%;
+    height: 100%;
+}
+.AboutImgTwo {
+    width: 100%;
+    height: 80%;
+}
+.AboutImgOne img {
+    height: 100%;
+    width: 100%;
+}
+.AboutImgTwo img {
+    height: 100%;
+    width: 100%;
+}
+.oppening {
+    height: 20rem;
+    background-color: #fffdd0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.oppening h1 {
+    font-family: mysecondfont;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.menutitle {
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+    font-family: mysecondfont;
+}
+.categories { 
+    display: grid;
+    width: 70%;
+    margin: 0 auto;
+    grid-template-columns: repeat(5,12rem);
+    column-gap: 1rems;
+    background-color: #40e0d0;
+}
+.categories li {
+    display: flex;
+    justify-content: center;
+}
+.categories li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 1.5rem;
+}
+.categories li a:hover {
+
+    background-color: coral;
+}
+.menu {
+    height: 30rem;
+    width: 100%;
+}
+.menuinnercontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+.menuinnercontainer:hover{
+    background-color: burlywood;
+}
+.memucontainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+.foodDetail {
+    display: grid;
+    grid-template-columns: 20% 30% 40% 10%;
+    position: relative;
+}
+.foodimg{
+    height: 100%;
+    width: 100%;
+}
+.foodimg img {
+    height: 100%;
+    width: 100%;
+}
+.foodprice , .foodtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foodspace{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foodspace span {
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.foodDescreption {
+    display: flex;
+    justify-content: center;
+}
+.MenuButton {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center; 
+   position: relative;
+}
+.btn {
+    border: 0em;
+    background-color: #5dc8cd;
+    width: 8rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    color: #ffff;
+    border-radius: 5px;
+    transition: all -5s ease-in;
+}
+.btn:hover {
+    background-color: #019394;
+}
+.reservation {
+    background-color: #ff8243;
+    height: 37rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innercontainer {
+    width: 60%;
+    height: 80%;
+    background-color: wheat;
+    border-radius: 3rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 60% 20%;
+    margin: 0 auto;
+}
+.reservationform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reservationtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reservationtitle h1 {
+    font-family: mysecondfont;
+    color: black;
+    text-transform: capitalize;
+    font-size: 2em;
+}
+.reservationinput{
+    width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+.reservationinput input , .reservationinput select{
+    border: 0;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+.reservationbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.resbtn {
+    border: 0em;
+    background-color: #5dc8cd;
+    width: 8rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 50px;
+    color: #ffff;
+    border-radius: 5px;
+    transition: all -5s ease-in;
+}
+.resbtn:hover {
+    background-color: #019394;
+}
+.blogtitle {
+    display: flex;
+    justify-content: center;
+    font-family: mysecondfont;
+    margin: 3rem; 
+    text-transform: capitalize;
+}
+.posts {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    min-height: 30rem;
+    width: 80%;
+    margin: 0 auto;
+    column-gap: 1rem;
+}
+.post{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    column-gap: 1rem;
+    grid-template-rows: 40% 20% 30% 10%;
+}
+.post img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.post p {
+    width: 100%;
+    justify-content: center;
+    text-align: justify;
+}
+.post h1 {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.post button {
+    margin: 0 auto;
+    width: 50%;
+    border: 0;
+    border-radius: 2px;
+    padding: 12px 10px;
+    background-color: #019394;
+}
+.post button:hover{
+    background-color: #5dc8cd;
+}
+.newsletter {
+    height: 20rem;
+    margin: 3rem auto;
+    background-color: #5dc8cd;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.newsdesc {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.newsletterinputs{
+    display: flex;
+    justify-content: center;
+    align-self: center; 
+}
+.newsletterinputs input{
+    border: 0em;
+    border-radius: 2px;
+    margin: 10px;
+    padding: 12px 10px;
+}
+.newsletterinputs input[type="submit"]{
+    transition: all 2s ease-in-out;
+}
+.newsletterinputs input[type="submit"]:hover{
+    backgroung-color: #5dc8cd;
+}
+footer {
+    height: 0100px;
+    background-color: blueviolet;
+    margin-top: 10px;
+}
+.footertitle{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.footertitle h1{
+    margin-top: 0.8rem;
+}
+.footerpara{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.footerpara p{
+    margin-top: 0.8rem;
+}
+@media only screen and (max-width:600px) {
+    header{
+display: block;
+height: 20vh;
+    }
+    .title{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        font-weight: bolder;
+    }
+    .title a{
+        font-size: 1rem;
+    }
+    .nav-links{
+        display: block;
+    }
+    .nav-links li {
+        justify-content: center;
+        text-align: left;
+        margin-top: .5rem;
+    }
+    .centeredText h1{
+        font-size: 2rem;
+    }
+    .about{
+        display: block;
+    }
+    .categories{
+        display: block;
+    }
+    .menuinnercontainer{
+        display: block;
+    }
+    .posts{
+        display: block;
+    }
+    .post{
+        height: 400px;
+        margin-bottom: 1rem;
+    }
+    .newsletter{
+        margin: 3rem 0;
+        display: grid;
+        grid-template-rows: 40% 60%;
+    }
+    .newsletterinputs{
+        display: flex;
+        flex-direction: column;
+    }
+}
